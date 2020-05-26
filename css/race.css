@@ -1,0 +1,239 @@
+.pink-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* header */
+.header {
+    flex: 0 0 162px;
+    background-image: url("../img/race/竞猜背景图.png");
+    padding: 0 22px;
+}
+
+.header-nav {
+    padding-top: 48px;
+    padding-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 211px;
+    height: 27px;
+}
+
+.header-nav li {
+    font-size: 16px;
+    font-family: PingFang-SC-Medium, PingFang-SC;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 27px;
+}
+
+.header-nav li:nth-child(1) {
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 2px #ffffff solid;
+}
+
+.header-pay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-pay p {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-pay span:first-child {
+    font-size: 12px;
+    font-family: PingFang-SC-Medium, PingFang-SC;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
+.header-pay span:last-child {
+    font-size: 27px;
+    font-family: STHeitiSC-Medium, STHeitiSC;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
+.header-pay input {
+    width: 93px;
+    height: 36px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    font-size: 16px;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+/* main */
+.main {
+    flex: 1;
+    background: rgba(243, 243, 243, 1);
+    overflow-y: auto;
+}
+
+.main .item {
+    background: #ffffff;
+    margin: 15px 11px 8px;
+    border-radius: 10px;
+}
+
+.main .item-top {
+    height: 23px;
+    font-size: 12px;
+    font-family: PingFang-SC-Medium, PingFang-SC;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 23px;
+    background-image: url("../img/race/竞猜名称背景.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main .item-date {
+    display: flex;
+    justify-content: center;
+    padding: 9px 0;
+    font-size: 14px;
+    font-family: PingFang-SC-Medium, PingFang-SC;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 1);
+}
+
+.main .item-vs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main .item-vs p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .item-vs p span:first-child {
+    font-size: 18px;
+    font-family: PingFang-SC-Bold, PingFang-SC;
+    font-weight: bold;
+    color: rgba(43, 43, 43, 1);
+}
+
+.main .item-vs p span:last-child {
+    font-size: 12px;
+    font-family: PingFang-SC-Medium, PingFang-SC;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 1);
+}
+
+/* .main .item-pic{
+    height: 32px;
+    margin: 9px 0;
+    position: relative;
+}
+.main .item-pic .blue{
+    position: absolute;
+    z-index: 1;
+}
+.main .item-pic .red{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+} */
+.main .item-pic {
+    height: 32px;
+    margin: 9px 0;
+    display: flex;
+    color: #ffffff;
+}
+
+.main .item-pic .blue {
+    background-color: #027AFF;
+    width: 80%;
+    padding-left: 15px;
+    line-height: 32px;
+}
+
+.main .item-pic .red {
+    background-color: #D45959;
+    flex: 1;
+    text-align: end;
+    padding-right: 15px;
+    line-height: 32px;
+}
+
+.main .item-pick {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main .item-pick input {
+    width: 153px;
+    height: 34px;
+    border-radius: 22px;
+    border: 1px solid rgba(205, 205, 205, 1);
+    background: transparent;
+    font-size: 13px;
+    font-family: PingFang-SC-Medium, PingFang-SC;
+    font-weight: 500;
+    color: rgba(44, 38, 38, 1);
+}
+
+.main .item-result p {
+    display: flex;
+    font-size: 12px;
+    font-family: PingFang-SC-Medium, PingFang-SC;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 1);
+    text-align: start;
+    padding: 10px 0 10px 18px;
+    border-bottom: 1px #F1F1F1 solid;
+}
+
+.main .item-result p span:nth-child(1) {
+    flex: 1;
+}
+
+.main .item-result p span:nth-child(2) {
+    flex: 1;
+}
+
+.main .item-result p span:nth-child(3) {
+    flex: 1;
+}
+
+.item-result .num {
+    color: #D45959;
+}
+
+.main .item-num {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 18px;
+    font-size: 12px;
+    font-family: PingFang-SC-Medium, PingFang-SC;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 1);
+}
+
+
+/* footer */
+footer {
+    flex: 0 0 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px #f1f1f1 solid;
+}

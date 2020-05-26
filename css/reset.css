@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+}
+.pink-container {
+    height: 100%;
+}
+/* 盒子模型，将padding和border包括进宽高 */
+.box{
+    box-sizing: border-box;
+}
+/* 清除浮动 */
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    zoom: 1;
+}
+/* 去除input边框 */
+input{
+    border: 0;
+}
+/* 去除列表前部标签 */
+ul,ol{
+    list-style: none;
+}
+/* 去除链接下划线，改变其中字体颜色 */
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* 背景图片不重复覆盖容器 */
+.back-img-repeat{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* 溢出的文字1行显示，多余显示省略号 */
+.text-ellipsis1{
+    /* 给一个width */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.text-ellipsis2{
+    /* 给一个width */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+/* 溢出的文字2行显示，多余显示省略号 */
+/* flex布局 */
+/* 容器竖向排列 */
+.flex-colum {
+    display: flex;
+    flex-direction: column;
+}
+
